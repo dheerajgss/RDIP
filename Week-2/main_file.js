@@ -3,7 +3,7 @@ function addition()
 {
     var a = Number(document.calc.number1.value);
     var b = Number(document.calc.number2.value);
-    document.getElementById("calresult").innerHTML = "Value after addition is " + c
+    document.getElementById("calresult").innerHTML = "Value after addition is " + (a+b)
     return false;
 }
 function subtraction()
