@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task4.css">
+    <script src="main_file.js"></script>
+    <title>Who will survive?</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Who will survive?</h1><br><br>
+   <form>
+        <input type="text" id="num1" name="num2">
+        <input type="text" id="num2" name="num2"><br><br>
+        <button onclick="return rand('num1')">Generate 1st number</button>
+        <button onclick="return rand('num2')">Generate 2nd number</button><br><br>
+        <button onclick="return survive()">Click to see result</button>
+   </form>
+   <p id="surresult"></p>
+    </div>
+</body>
+</html>

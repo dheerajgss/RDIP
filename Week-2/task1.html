@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main_file.js"></script>
+    <link rel="stylesheet" href="task1.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1><br><br>
+        <form action="" name="calc">
+            <input type="text" id="number1" name="number2" placeholder="Enter 1st number"><br><br>
+            <input type="text" id="number2" name="number2" placeholder="Enter 2nd number"><br><br>
+            <label for="buttons">Available operations:</label><br><br>
+            <table> 
+                <tr>
+                    <td><button onclick="return addition()">+</button></td>
+                    <td><button onclick="return subtraction()">-</button></td>
+                    <td><button onclick="return multiplication()">*</button></td>
+                    <td><button onclick="return division()">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="return sqrt()">sqrt</button></td>
+                    <td><button onclick="return percentage()">perc</button></td>
+                    <td><button onclick="return abs()">abs</button></td>
+                </tr>
+            </table>
+        </form>
+        <p id="calresult"></p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task3.css">
+    <script src="main_file.js"></script>
+    <title>Anagram Checker</title>
+</head>
+<body>
+    <div class="pcontainer">
+        <h2>Palindrome checker</h2>
+        <form name="palform">
+            <label for="str">Enter a string:</label><br>
+            <input type="text" id="str" name="str"><br><br>
+            <button onclick="tem = palindrome();if(tem) document.getElementById('palresult').innerHTML = 'It is a palindrome'
+            else document.getElementById('palresult').innerHTML = 'It is not a palindrome';return false">Submit</button>
+        </form>
+        <p id="palresult"></p>
+    </div>
+    <div class="container">
+        <h2>Anagram checker</h2>
+        <form name="anaform">
+            <label for="string">Enter a string:</label><br>
+            <input type="text" id="string" name="string"><br><br>
+            <label for="word">Enter a meaningful word:</label><br>
+            <input type="text" id="word" name="word"><br><br>
+            <button onclick="tem = anagram();if(tem) document.getElementById('anaresult').innerHTML = 'The words are anagrams'
+            else document.getElementById('anaresult').innerHTML = 'The words are not anagram';return false">Submit</button>
+        </form>
+        
+        <p id="anaresult"></p>
+    </div>
+</body>
+</html>

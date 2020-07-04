@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="task2.css">
+    <script src="main_file.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Form validation</h2>
+    <form action="" onsubmit="return validate(this)" name="form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="number">Phone number:</label><br>
+        <input type="text" id="number" name="number" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+    </div>
+</body>
+</html>
